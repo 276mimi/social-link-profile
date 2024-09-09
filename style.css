@@ -1,0 +1,105 @@
+
+@font-face {
+    font-family: miracleChelseaFanFont;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+     /* ## Colors
+
+    ### Primary */
+
+    --Green: hsl(75, 94%, 57%);
+
+    /* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+body {
+    background-color: var(--Off-Black);
+    color: var(--White);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: miracleChelseaFanFont;
+}
+
+.container {
+    background-color: var(--Dark-Grey);
+    height: 525px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+img {
+    border-radius: 50%;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-bottom: .4rem;
+}
+
+.location {
+    color: var(--Green);
+    margin-bottom: 1.3rem;
+}
+
+.description {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+}
+
+button{
+    display: block;
+    width: 100%;
+    margin: 0.4rem;
+    padding: .7rem;
+    border-radius: 8px;
+    background-color: var(--Grey);
+    color: var(--White);
+    border: none;
+    font-size: 0.85rem;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+button:focus,
+button:hover {
+    background-color: var(--Green);
+    color: var(--Off-Black);
+    cursor: pointer;
+    font-weight: 800;
+    transition: all .9s .3s;
+}
+
+/* @media screen and(min-width: 1440px) {
+    .container{
+        width:400px;
+        padding: 2rem;
+        height: 630px;
+    }
+} */
+
+/* display flex;
+flex direction ; row(by default); 
+flex direction: colunm;
+flex direction: row reverse; */
+/* inline elements are elements that take up only the space they need and they fall side by side and they grow as you add more things e.g img button input span. why block elements take up the full width of the parent element e.g h1 p div  */
